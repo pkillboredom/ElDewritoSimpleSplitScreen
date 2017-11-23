@@ -4,7 +4,7 @@ Release binaries built for .Net Framework 4.6.1, **you must have .Net Framework 
 
 Just place ED06Splitter.exe in the same folder as eldorado.exe
 
-Designed to do the bare minimum; set a position, size, and launch.
+Designed to be functional; Launches the game, removes window borders, and moves it to your desired position and size.
 
 ![Screenshot of the tool.](https://i.imgur.com/it7zO33.png)
 
