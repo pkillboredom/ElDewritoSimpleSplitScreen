@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ED06Splitter
 {
-    public partial class Form1 : Form
+    public partial class ErrorPane : Form
     {
-        public Form1()
+        public ErrorPane()
         {
             InitializeComponent();
         }
