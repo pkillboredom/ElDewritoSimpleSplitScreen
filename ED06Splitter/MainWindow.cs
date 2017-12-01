@@ -178,6 +178,30 @@ namespace ED06Splitter
             gameLaunchThread.Start();
         }
 
+        private void twogames_Click(object sender, EventArgs e)
+        {
+            Thread gameOneLaunchThread = new Thread(() => LaunchInstanceThread(0, (int)GameOnePosX.Value, (int)GameOnePosY.Value, (int)GameOneSizeX.Value, (int)GameOneSizeY.Value));
+            gameOneLaunchThread.Start();
+            Thread gameTwoLaunchThread = new Thread(() => LaunchInstanceThread(1, (int)GameTwoPosX.Value, (int)GameTwoPosY.Value, (int)GameTwoSizeX.Value, (int)GameTwoSizeY.Value));
+            gameTwoLaunchThread.Start();
+
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void FourGames_Click(object sender, EventArgs e)
+        {
+            Thread gameOneLaunchThread = new Thread(() => LaunchInstanceThread(0, (int)GameOnePosX.Value, (int)GameOnePosY.Value, (int)GameOneSizeX.Value, (int)GameOneSizeY.Value));
+            gameOneLaunchThread.Start();
+            Thread gameTwoLaunchThread = new Thread(() => LaunchInstanceThread(1, (int)GameTwoPosX.Value, (int)GameTwoPosY.Value, (int)GameTwoSizeX.Value, (int)GameTwoSizeY.Value));
+            gameTwoLaunchThread.Start();
+            Thread gameThreeLaunchThread = new Thread(() => LaunchInstanceThread(2, (int)GameThreePosX.Value, (int)GameThreePosY.Value, (int)GameThreeSizeX.Value, (int)GameThreeSizeY.Value));
+            gameThreeLaunchThread.Start();
+            Thread gameFourLaunchThread = new Thread(() => LaunchInstanceThread(3, (int)GameFourPosX.Value, (int)GameFourPosY.Value, (int)GameFourSizeX.Value, (int)GameFourSizeY.Value));
+            gameFourLaunchThread.Start();
+
+            this.WindowState = FormWindowState.Minimized;
+        }
+
         #endregion
 
         private static void LaunchInstanceThread(int InstanceNumber, int XPosition, int YPosition, int XSize, int YSize)
@@ -190,8 +214,10 @@ namespace ED06Splitter
                 {
                     IntPtr window = gameProcess.MainWindowHandle;
                     SetWindowLong(window, gwlStyle, wsSysMenu);
-                    SetWindowPos(window, 0, XPosition, YPosition, XSize, YSize, 0x40);
+                    SetWindowPos(window, -1, XPosition, YPosition, XSize, YSize, 0x40); //-1 for param two is HWND_TOPMOST
                     DrawMenuBar(window);
+                    
+
                 }
                 catch
                 {

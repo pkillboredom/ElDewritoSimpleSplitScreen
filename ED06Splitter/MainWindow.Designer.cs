@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.GameOnePosX = new System.Windows.Forms.NumericUpDown();
@@ -98,6 +99,9 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
+            this.twogames = new System.Windows.Forms.Button();
+            this.FourGames = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.GameOnePosX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GameOnePosY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GameOneSizeY)).BeginInit();
@@ -119,67 +123,74 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 38);
+            this.label1.Location = new System.Drawing.Point(40, 58);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Position";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 61);
+            this.label2.Location = new System.Drawing.Point(40, 94);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(17, 13);
+            this.label2.Size = new System.Drawing.Size(24, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "X:";
             // 
             // GameOnePosX
             // 
-            this.GameOnePosX.Location = new System.Drawing.Point(50, 59);
+            this.GameOnePosX.Location = new System.Drawing.Point(75, 91);
+            this.GameOnePosX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameOnePosX.Maximum = new decimal(new int[] {
             3840,
             0,
             0,
             0});
             this.GameOnePosX.Name = "GameOnePosX";
-            this.GameOnePosX.Size = new System.Drawing.Size(120, 20);
+            this.GameOnePosX.Size = new System.Drawing.Size(180, 26);
             this.GameOnePosX.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(176, 61);
+            this.label3.Location = new System.Drawing.Point(264, 94);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 13);
+            this.label3.Size = new System.Drawing.Size(24, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Y:";
             // 
             // GameOnePosY
             // 
-            this.GameOnePosY.Location = new System.Drawing.Point(200, 58);
+            this.GameOnePosY.Location = new System.Drawing.Point(300, 89);
+            this.GameOnePosY.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameOnePosY.Maximum = new decimal(new int[] {
             2160,
             0,
             0,
             0});
             this.GameOnePosY.Name = "GameOnePosY";
-            this.GameOnePosY.Size = new System.Drawing.Size(120, 20);
+            this.GameOnePosY.Size = new System.Drawing.Size(180, 26);
             this.GameOnePosY.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 82);
+            this.label4.Location = new System.Drawing.Point(40, 126);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(27, 13);
+            this.label4.Size = new System.Drawing.Size(40, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Size";
             // 
             // GameOneSizeY
             // 
-            this.GameOneSizeY.Location = new System.Drawing.Point(200, 97);
+            this.GameOneSizeY.Location = new System.Drawing.Point(300, 149);
+            this.GameOneSizeY.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameOneSizeY.Maximum = new decimal(new int[] {
             2160,
             0,
@@ -191,7 +202,7 @@
             0,
             0});
             this.GameOneSizeY.Name = "GameOneSizeY";
-            this.GameOneSizeY.Size = new System.Drawing.Size(120, 20);
+            this.GameOneSizeY.Size = new System.Drawing.Size(180, 26);
             this.GameOneSizeY.TabIndex = 9;
             this.GameOneSizeY.Value = new decimal(new int[] {
             540,
@@ -202,15 +213,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(176, 100);
+            this.label5.Location = new System.Drawing.Point(264, 154);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 13);
+            this.label5.Size = new System.Drawing.Size(24, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Y:";
             // 
             // GameOneSizeX
             // 
-            this.GameOneSizeX.Location = new System.Drawing.Point(50, 98);
+            this.GameOneSizeX.Location = new System.Drawing.Point(75, 151);
+            this.GameOneSizeX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameOneSizeX.Maximum = new decimal(new int[] {
             3840,
             0,
@@ -222,7 +235,7 @@
             0,
             0});
             this.GameOneSizeX.Name = "GameOneSizeX";
-            this.GameOneSizeX.Size = new System.Drawing.Size(120, 20);
+            this.GameOneSizeX.Size = new System.Drawing.Size(180, 26);
             this.GameOneSizeX.TabIndex = 7;
             this.GameOneSizeX.Value = new decimal(new int[] {
             960,
@@ -233,36 +246,40 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 100);
+            this.label6.Location = new System.Drawing.Point(40, 154);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label6.Size = new System.Drawing.Size(17, 13);
+            this.label6.Size = new System.Drawing.Size(24, 20);
             this.label6.TabIndex = 6;
             this.label6.Text = "X:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 13);
+            this.label7.Location = new System.Drawing.Point(20, 20);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 13);
+            this.label7.Size = new System.Drawing.Size(87, 20);
             this.label7.TabIndex = 10;
             this.label7.Text = "Game One";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(30, 126);
+            this.label8.Location = new System.Drawing.Point(45, 194);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 13);
+            this.label8.Size = new System.Drawing.Size(112, 20);
             this.label8.TabIndex = 11;
             this.label8.Text = "Quick Settings";
             // 
             // GameOne1080TopLeft
             // 
-            this.GameOne1080TopLeft.Location = new System.Drawing.Point(33, 143);
+            this.GameOne1080TopLeft.Location = new System.Drawing.Point(50, 220);
+            this.GameOne1080TopLeft.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameOne1080TopLeft.Name = "GameOne1080TopLeft";
-            this.GameOne1080TopLeft.Size = new System.Drawing.Size(96, 23);
+            this.GameOne1080TopLeft.Size = new System.Drawing.Size(144, 35);
             this.GameOne1080TopLeft.TabIndex = 12;
             this.GameOne1080TopLeft.Text = "1080p Top Left";
             this.GameOne1080TopLeft.UseVisualStyleBackColor = true;
@@ -270,9 +287,10 @@
             // 
             // GameOne1080TopHalf
             // 
-            this.GameOne1080TopHalf.Location = new System.Drawing.Point(135, 143);
+            this.GameOne1080TopHalf.Location = new System.Drawing.Point(202, 220);
+            this.GameOne1080TopHalf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameOne1080TopHalf.Name = "GameOne1080TopHalf";
-            this.GameOne1080TopHalf.Size = new System.Drawing.Size(96, 23);
+            this.GameOne1080TopHalf.Size = new System.Drawing.Size(144, 35);
             this.GameOne1080TopHalf.TabIndex = 13;
             this.GameOne1080TopHalf.Text = "1080p Top Half";
             this.GameOne1080TopHalf.UseVisualStyleBackColor = true;
@@ -280,9 +298,10 @@
             // 
             // GameOne1080LeftSide
             // 
-            this.GameOne1080LeftSide.Location = new System.Drawing.Point(237, 143);
+            this.GameOne1080LeftSide.Location = new System.Drawing.Point(356, 220);
+            this.GameOne1080LeftSide.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameOne1080LeftSide.Name = "GameOne1080LeftSide";
-            this.GameOne1080LeftSide.Size = new System.Drawing.Size(96, 23);
+            this.GameOne1080LeftSide.Size = new System.Drawing.Size(144, 35);
             this.GameOne1080LeftSide.TabIndex = 14;
             this.GameOne1080LeftSide.Text = "1080p Left Side";
             this.GameOne1080LeftSide.UseVisualStyleBackColor = true;
@@ -290,9 +309,10 @@
             // 
             // GameOne4KLeftSide
             // 
-            this.GameOne4KLeftSide.Location = new System.Drawing.Point(237, 172);
+            this.GameOne4KLeftSide.Location = new System.Drawing.Point(356, 265);
+            this.GameOne4KLeftSide.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameOne4KLeftSide.Name = "GameOne4KLeftSide";
-            this.GameOne4KLeftSide.Size = new System.Drawing.Size(96, 23);
+            this.GameOne4KLeftSide.Size = new System.Drawing.Size(144, 35);
             this.GameOne4KLeftSide.TabIndex = 17;
             this.GameOne4KLeftSide.Text = "4K Left Side";
             this.GameOne4KLeftSide.UseVisualStyleBackColor = true;
@@ -300,9 +320,10 @@
             // 
             // GameOne4KTopHalf
             // 
-            this.GameOne4KTopHalf.Location = new System.Drawing.Point(135, 172);
+            this.GameOne4KTopHalf.Location = new System.Drawing.Point(202, 265);
+            this.GameOne4KTopHalf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameOne4KTopHalf.Name = "GameOne4KTopHalf";
-            this.GameOne4KTopHalf.Size = new System.Drawing.Size(96, 23);
+            this.GameOne4KTopHalf.Size = new System.Drawing.Size(144, 35);
             this.GameOne4KTopHalf.TabIndex = 16;
             this.GameOne4KTopHalf.Text = "4K Top Half";
             this.GameOne4KTopHalf.UseVisualStyleBackColor = true;
@@ -310,9 +331,10 @@
             // 
             // GameOne4KTopLeft
             // 
-            this.GameOne4KTopLeft.Location = new System.Drawing.Point(33, 172);
+            this.GameOne4KTopLeft.Location = new System.Drawing.Point(50, 265);
+            this.GameOne4KTopLeft.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameOne4KTopLeft.Name = "GameOne4KTopLeft";
-            this.GameOne4KTopLeft.Size = new System.Drawing.Size(96, 23);
+            this.GameOne4KTopLeft.Size = new System.Drawing.Size(144, 35);
             this.GameOne4KTopLeft.TabIndex = 15;
             this.GameOne4KTopLeft.Text = "4K Top Left";
             this.GameOne4KTopLeft.UseVisualStyleBackColor = true;
@@ -320,9 +342,10 @@
             // 
             // GameOneLaunch
             // 
-            this.GameOneLaunch.Location = new System.Drawing.Point(16, 201);
+            this.GameOneLaunch.Location = new System.Drawing.Point(24, 309);
+            this.GameOneLaunch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameOneLaunch.Name = "GameOneLaunch";
-            this.GameOneLaunch.Size = new System.Drawing.Size(317, 23);
+            this.GameOneLaunch.Size = new System.Drawing.Size(476, 35);
             this.GameOneLaunch.TabIndex = 18;
             this.GameOneLaunch.Text = "Launch Game One";
             this.GameOneLaunch.UseVisualStyleBackColor = true;
@@ -330,9 +353,10 @@
             // 
             // GameTwoLaunch
             // 
-            this.GameTwoLaunch.Location = new System.Drawing.Point(408, 201);
+            this.GameTwoLaunch.Location = new System.Drawing.Point(612, 309);
+            this.GameTwoLaunch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameTwoLaunch.Name = "GameTwoLaunch";
-            this.GameTwoLaunch.Size = new System.Drawing.Size(317, 23);
+            this.GameTwoLaunch.Size = new System.Drawing.Size(476, 35);
             this.GameTwoLaunch.TabIndex = 37;
             this.GameTwoLaunch.Text = "Launch Game Two";
             this.GameTwoLaunch.UseVisualStyleBackColor = true;
@@ -340,9 +364,10 @@
             // 
             // GameTwo4KRightSide
             // 
-            this.GameTwo4KRightSide.Location = new System.Drawing.Point(629, 172);
+            this.GameTwo4KRightSide.Location = new System.Drawing.Point(944, 265);
+            this.GameTwo4KRightSide.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameTwo4KRightSide.Name = "GameTwo4KRightSide";
-            this.GameTwo4KRightSide.Size = new System.Drawing.Size(96, 23);
+            this.GameTwo4KRightSide.Size = new System.Drawing.Size(144, 35);
             this.GameTwo4KRightSide.TabIndex = 36;
             this.GameTwo4KRightSide.Text = "4K Right Side";
             this.GameTwo4KRightSide.UseVisualStyleBackColor = true;
@@ -350,9 +375,10 @@
             // 
             // GameTwo4KBottomHalf
             // 
-            this.GameTwo4KBottomHalf.Location = new System.Drawing.Point(527, 172);
+            this.GameTwo4KBottomHalf.Location = new System.Drawing.Point(790, 265);
+            this.GameTwo4KBottomHalf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameTwo4KBottomHalf.Name = "GameTwo4KBottomHalf";
-            this.GameTwo4KBottomHalf.Size = new System.Drawing.Size(96, 23);
+            this.GameTwo4KBottomHalf.Size = new System.Drawing.Size(144, 35);
             this.GameTwo4KBottomHalf.TabIndex = 35;
             this.GameTwo4KBottomHalf.Text = "4K Bottom Half";
             this.GameTwo4KBottomHalf.UseVisualStyleBackColor = true;
@@ -360,9 +386,10 @@
             // 
             // GameTwo4KTopRight
             // 
-            this.GameTwo4KTopRight.Location = new System.Drawing.Point(425, 172);
+            this.GameTwo4KTopRight.Location = new System.Drawing.Point(638, 265);
+            this.GameTwo4KTopRight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameTwo4KTopRight.Name = "GameTwo4KTopRight";
-            this.GameTwo4KTopRight.Size = new System.Drawing.Size(96, 23);
+            this.GameTwo4KTopRight.Size = new System.Drawing.Size(144, 35);
             this.GameTwo4KTopRight.TabIndex = 34;
             this.GameTwo4KTopRight.Text = "4K Top Right";
             this.GameTwo4KTopRight.UseVisualStyleBackColor = true;
@@ -370,9 +397,10 @@
             // 
             // GameTwo1080pRightSide
             // 
-            this.GameTwo1080pRightSide.Location = new System.Drawing.Point(629, 143);
+            this.GameTwo1080pRightSide.Location = new System.Drawing.Point(944, 220);
+            this.GameTwo1080pRightSide.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameTwo1080pRightSide.Name = "GameTwo1080pRightSide";
-            this.GameTwo1080pRightSide.Size = new System.Drawing.Size(96, 23);
+            this.GameTwo1080pRightSide.Size = new System.Drawing.Size(144, 35);
             this.GameTwo1080pRightSide.TabIndex = 33;
             this.GameTwo1080pRightSide.Text = "1080p Rght Side";
             this.GameTwo1080pRightSide.UseVisualStyleBackColor = true;
@@ -380,9 +408,10 @@
             // 
             // GameTwo1080pBottomHalf
             // 
-            this.GameTwo1080pBottomHalf.Location = new System.Drawing.Point(527, 143);
+            this.GameTwo1080pBottomHalf.Location = new System.Drawing.Point(790, 220);
+            this.GameTwo1080pBottomHalf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameTwo1080pBottomHalf.Name = "GameTwo1080pBottomHalf";
-            this.GameTwo1080pBottomHalf.Size = new System.Drawing.Size(96, 23);
+            this.GameTwo1080pBottomHalf.Size = new System.Drawing.Size(144, 35);
             this.GameTwo1080pBottomHalf.TabIndex = 32;
             this.GameTwo1080pBottomHalf.Text = "1080p Bttm Half";
             this.GameTwo1080pBottomHalf.UseVisualStyleBackColor = true;
@@ -390,9 +419,10 @@
             // 
             // GameTwo1080pTopRight
             // 
-            this.GameTwo1080pTopRight.Location = new System.Drawing.Point(425, 143);
+            this.GameTwo1080pTopRight.Location = new System.Drawing.Point(638, 220);
+            this.GameTwo1080pTopRight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameTwo1080pTopRight.Name = "GameTwo1080pTopRight";
-            this.GameTwo1080pTopRight.Size = new System.Drawing.Size(96, 23);
+            this.GameTwo1080pTopRight.Size = new System.Drawing.Size(144, 35);
             this.GameTwo1080pTopRight.TabIndex = 31;
             this.GameTwo1080pTopRight.Text = "1080p Top Right";
             this.GameTwo1080pTopRight.UseVisualStyleBackColor = true;
@@ -401,24 +431,27 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(422, 126);
+            this.label9.Location = new System.Drawing.Point(633, 194);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 13);
+            this.label9.Size = new System.Drawing.Size(112, 20);
             this.label9.TabIndex = 30;
             this.label9.Text = "Quick Settings";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(405, 13);
+            this.label10.Location = new System.Drawing.Point(608, 20);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(59, 13);
+            this.label10.Size = new System.Drawing.Size(86, 20);
             this.label10.TabIndex = 29;
             this.label10.Text = "Game Two";
             // 
             // GameTwoSizeY
             // 
-            this.GameTwoSizeY.Location = new System.Drawing.Point(592, 97);
+            this.GameTwoSizeY.Location = new System.Drawing.Point(888, 149);
+            this.GameTwoSizeY.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameTwoSizeY.Maximum = new decimal(new int[] {
             2160,
             0,
@@ -430,7 +463,7 @@
             0,
             0});
             this.GameTwoSizeY.Name = "GameTwoSizeY";
-            this.GameTwoSizeY.Size = new System.Drawing.Size(120, 20);
+            this.GameTwoSizeY.Size = new System.Drawing.Size(180, 26);
             this.GameTwoSizeY.TabIndex = 28;
             this.GameTwoSizeY.Value = new decimal(new int[] {
             540,
@@ -441,15 +474,17 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(568, 100);
+            this.label11.Location = new System.Drawing.Point(852, 154);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(17, 13);
+            this.label11.Size = new System.Drawing.Size(24, 20);
             this.label11.TabIndex = 27;
             this.label11.Text = "Y:";
             // 
             // GameTwoSizeX
             // 
-            this.GameTwoSizeX.Location = new System.Drawing.Point(442, 98);
+            this.GameTwoSizeX.Location = new System.Drawing.Point(663, 151);
+            this.GameTwoSizeX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameTwoSizeX.Maximum = new decimal(new int[] {
             3840,
             0,
@@ -461,7 +496,7 @@
             0,
             0});
             this.GameTwoSizeX.Name = "GameTwoSizeX";
-            this.GameTwoSizeX.Size = new System.Drawing.Size(120, 20);
+            this.GameTwoSizeX.Size = new System.Drawing.Size(180, 26);
             this.GameTwoSizeX.TabIndex = 26;
             this.GameTwoSizeX.Value = new decimal(new int[] {
             960,
@@ -472,53 +507,58 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(419, 100);
+            this.label12.Location = new System.Drawing.Point(628, 154);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label12.Size = new System.Drawing.Size(17, 13);
+            this.label12.Size = new System.Drawing.Size(24, 20);
             this.label12.TabIndex = 25;
             this.label12.Text = "X:";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(419, 82);
+            this.label13.Location = new System.Drawing.Point(628, 126);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(27, 13);
+            this.label13.Size = new System.Drawing.Size(40, 20);
             this.label13.TabIndex = 24;
             this.label13.Text = "Size";
             // 
             // GameTwoPosY
             // 
-            this.GameTwoPosY.Location = new System.Drawing.Point(592, 58);
+            this.GameTwoPosY.Location = new System.Drawing.Point(888, 89);
+            this.GameTwoPosY.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameTwoPosY.Maximum = new decimal(new int[] {
             2160,
             0,
             0,
             0});
             this.GameTwoPosY.Name = "GameTwoPosY";
-            this.GameTwoPosY.Size = new System.Drawing.Size(120, 20);
+            this.GameTwoPosY.Size = new System.Drawing.Size(180, 26);
             this.GameTwoPosY.TabIndex = 23;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(568, 61);
+            this.label14.Location = new System.Drawing.Point(852, 94);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(17, 13);
+            this.label14.Size = new System.Drawing.Size(24, 20);
             this.label14.TabIndex = 22;
             this.label14.Text = "Y:";
             // 
             // GameTwoPosX
             // 
-            this.GameTwoPosX.Location = new System.Drawing.Point(442, 59);
+            this.GameTwoPosX.Location = new System.Drawing.Point(663, 91);
+            this.GameTwoPosX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameTwoPosX.Maximum = new decimal(new int[] {
             3840,
             0,
             0,
             0});
             this.GameTwoPosX.Name = "GameTwoPosX";
-            this.GameTwoPosX.Size = new System.Drawing.Size(120, 20);
+            this.GameTwoPosX.Size = new System.Drawing.Size(180, 26);
             this.GameTwoPosX.TabIndex = 21;
             this.GameTwoPosX.Value = new decimal(new int[] {
             960,
@@ -529,27 +569,30 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(419, 61);
+            this.label15.Location = new System.Drawing.Point(628, 94);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label15.Size = new System.Drawing.Size(17, 13);
+            this.label15.Size = new System.Drawing.Size(24, 20);
             this.label15.TabIndex = 20;
             this.label15.Text = "X:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(419, 38);
+            this.label16.Location = new System.Drawing.Point(628, 58);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(44, 13);
+            this.label16.Size = new System.Drawing.Size(65, 20);
             this.label16.TabIndex = 19;
             this.label16.Text = "Position";
             // 
             // GameThreeLaunch
             // 
-            this.GameThreeLaunch.Location = new System.Drawing.Point(16, 448);
+            this.GameThreeLaunch.Location = new System.Drawing.Point(24, 689);
+            this.GameThreeLaunch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameThreeLaunch.Name = "GameThreeLaunch";
-            this.GameThreeLaunch.Size = new System.Drawing.Size(317, 23);
+            this.GameThreeLaunch.Size = new System.Drawing.Size(476, 35);
             this.GameThreeLaunch.TabIndex = 56;
             this.GameThreeLaunch.Text = "Launch Game Three";
             this.GameThreeLaunch.UseVisualStyleBackColor = true;
@@ -557,9 +600,10 @@
             // 
             // GameThree4KBottomLeft
             // 
-            this.GameThree4KBottomLeft.Location = new System.Drawing.Point(33, 419);
+            this.GameThree4KBottomLeft.Location = new System.Drawing.Point(50, 645);
+            this.GameThree4KBottomLeft.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameThree4KBottomLeft.Name = "GameThree4KBottomLeft";
-            this.GameThree4KBottomLeft.Size = new System.Drawing.Size(96, 23);
+            this.GameThree4KBottomLeft.Size = new System.Drawing.Size(144, 35);
             this.GameThree4KBottomLeft.TabIndex = 53;
             this.GameThree4KBottomLeft.Text = "4K Bottom Left";
             this.GameThree4KBottomLeft.UseVisualStyleBackColor = true;
@@ -567,9 +611,10 @@
             // 
             // GameThree1080BottomLeft
             // 
-            this.GameThree1080BottomLeft.Location = new System.Drawing.Point(33, 390);
+            this.GameThree1080BottomLeft.Location = new System.Drawing.Point(50, 600);
+            this.GameThree1080BottomLeft.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameThree1080BottomLeft.Name = "GameThree1080BottomLeft";
-            this.GameThree1080BottomLeft.Size = new System.Drawing.Size(96, 23);
+            this.GameThree1080BottomLeft.Size = new System.Drawing.Size(144, 35);
             this.GameThree1080BottomLeft.TabIndex = 50;
             this.GameThree1080BottomLeft.Text = "1080p Bttm Left";
             this.GameThree1080BottomLeft.UseVisualStyleBackColor = true;
@@ -578,24 +623,27 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(30, 373);
+            this.label17.Location = new System.Drawing.Point(45, 574);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(76, 13);
+            this.label17.Size = new System.Drawing.Size(112, 20);
             this.label17.TabIndex = 49;
             this.label17.Text = "Quick Settings";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(13, 260);
+            this.label18.Location = new System.Drawing.Point(20, 400);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(66, 13);
+            this.label18.Size = new System.Drawing.Size(98, 20);
             this.label18.TabIndex = 48;
             this.label18.Text = "Game Three";
             // 
             // GameThreeSizeY
             // 
-            this.GameThreeSizeY.Location = new System.Drawing.Point(200, 344);
+            this.GameThreeSizeY.Location = new System.Drawing.Point(300, 529);
+            this.GameThreeSizeY.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameThreeSizeY.Maximum = new decimal(new int[] {
             2160,
             0,
@@ -607,7 +655,7 @@
             0,
             0});
             this.GameThreeSizeY.Name = "GameThreeSizeY";
-            this.GameThreeSizeY.Size = new System.Drawing.Size(120, 20);
+            this.GameThreeSizeY.Size = new System.Drawing.Size(180, 26);
             this.GameThreeSizeY.TabIndex = 47;
             this.GameThreeSizeY.Value = new decimal(new int[] {
             540,
@@ -618,15 +666,17 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(176, 347);
+            this.label19.Location = new System.Drawing.Point(264, 534);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(17, 13);
+            this.label19.Size = new System.Drawing.Size(24, 20);
             this.label19.TabIndex = 46;
             this.label19.Text = "Y:";
             // 
             // GameThreeSizeX
             // 
-            this.GameThreeSizeX.Location = new System.Drawing.Point(50, 345);
+            this.GameThreeSizeX.Location = new System.Drawing.Point(75, 531);
+            this.GameThreeSizeX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameThreeSizeX.Maximum = new decimal(new int[] {
             3840,
             0,
@@ -638,7 +688,7 @@
             0,
             0});
             this.GameThreeSizeX.Name = "GameThreeSizeX";
-            this.GameThreeSizeX.Size = new System.Drawing.Size(120, 20);
+            this.GameThreeSizeX.Size = new System.Drawing.Size(180, 26);
             this.GameThreeSizeX.TabIndex = 45;
             this.GameThreeSizeX.Value = new decimal(new int[] {
             960,
@@ -649,32 +699,35 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(27, 347);
+            this.label20.Location = new System.Drawing.Point(40, 534);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label20.Size = new System.Drawing.Size(17, 13);
+            this.label20.Size = new System.Drawing.Size(24, 20);
             this.label20.TabIndex = 44;
             this.label20.Text = "X:";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(27, 329);
+            this.label21.Location = new System.Drawing.Point(40, 506);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(27, 13);
+            this.label21.Size = new System.Drawing.Size(40, 20);
             this.label21.TabIndex = 43;
             this.label21.Text = "Size";
             // 
             // GameThreePosY
             // 
-            this.GameThreePosY.Location = new System.Drawing.Point(200, 305);
+            this.GameThreePosY.Location = new System.Drawing.Point(300, 469);
+            this.GameThreePosY.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameThreePosY.Maximum = new decimal(new int[] {
             2160,
             0,
             0,
             0});
             this.GameThreePosY.Name = "GameThreePosY";
-            this.GameThreePosY.Size = new System.Drawing.Size(120, 20);
+            this.GameThreePosY.Size = new System.Drawing.Size(180, 26);
             this.GameThreePosY.TabIndex = 42;
             this.GameThreePosY.Value = new decimal(new int[] {
             540,
@@ -685,48 +738,53 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(176, 308);
+            this.label22.Location = new System.Drawing.Point(264, 474);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(17, 13);
+            this.label22.Size = new System.Drawing.Size(24, 20);
             this.label22.TabIndex = 41;
             this.label22.Text = "Y:";
             // 
             // GameThreePosX
             // 
-            this.GameThreePosX.Location = new System.Drawing.Point(50, 306);
+            this.GameThreePosX.Location = new System.Drawing.Point(75, 471);
+            this.GameThreePosX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameThreePosX.Maximum = new decimal(new int[] {
             3840,
             0,
             0,
             0});
             this.GameThreePosX.Name = "GameThreePosX";
-            this.GameThreePosX.Size = new System.Drawing.Size(120, 20);
+            this.GameThreePosX.Size = new System.Drawing.Size(180, 26);
             this.GameThreePosX.TabIndex = 40;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(27, 308);
+            this.label23.Location = new System.Drawing.Point(40, 474);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
             this.label23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label23.Size = new System.Drawing.Size(17, 13);
+            this.label23.Size = new System.Drawing.Size(24, 20);
             this.label23.TabIndex = 39;
             this.label23.Text = "X:";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(27, 285);
+            this.label24.Location = new System.Drawing.Point(40, 438);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(44, 13);
+            this.label24.Size = new System.Drawing.Size(65, 20);
             this.label24.TabIndex = 38;
             this.label24.Text = "Position";
             // 
             // GameFourLaunch
             // 
-            this.GameFourLaunch.Location = new System.Drawing.Point(408, 448);
+            this.GameFourLaunch.Location = new System.Drawing.Point(612, 689);
+            this.GameFourLaunch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameFourLaunch.Name = "GameFourLaunch";
-            this.GameFourLaunch.Size = new System.Drawing.Size(317, 23);
+            this.GameFourLaunch.Size = new System.Drawing.Size(476, 35);
             this.GameFourLaunch.TabIndex = 73;
             this.GameFourLaunch.Text = "Launch Game Four";
             this.GameFourLaunch.UseVisualStyleBackColor = true;
@@ -734,9 +792,10 @@
             // 
             // GameFour4KBottomRight
             // 
-            this.GameFour4KBottomRight.Location = new System.Drawing.Point(425, 419);
+            this.GameFour4KBottomRight.Location = new System.Drawing.Point(638, 645);
+            this.GameFour4KBottomRight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameFour4KBottomRight.Name = "GameFour4KBottomRight";
-            this.GameFour4KBottomRight.Size = new System.Drawing.Size(96, 23);
+            this.GameFour4KBottomRight.Size = new System.Drawing.Size(144, 35);
             this.GameFour4KBottomRight.TabIndex = 71;
             this.GameFour4KBottomRight.Text = "4K Bottom Right";
             this.GameFour4KBottomRight.UseVisualStyleBackColor = true;
@@ -744,9 +803,10 @@
             // 
             // GameFour1080BottomRight
             // 
-            this.GameFour1080BottomRight.Location = new System.Drawing.Point(425, 390);
+            this.GameFour1080BottomRight.Location = new System.Drawing.Point(638, 600);
+            this.GameFour1080BottomRight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameFour1080BottomRight.Name = "GameFour1080BottomRight";
-            this.GameFour1080BottomRight.Size = new System.Drawing.Size(96, 23);
+            this.GameFour1080BottomRight.Size = new System.Drawing.Size(144, 35);
             this.GameFour1080BottomRight.TabIndex = 69;
             this.GameFour1080BottomRight.Text = "1080p Bttm Rght";
             this.GameFour1080BottomRight.UseVisualStyleBackColor = true;
@@ -755,24 +815,27 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(422, 373);
+            this.label25.Location = new System.Drawing.Point(633, 574);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(76, 13);
+            this.label25.Size = new System.Drawing.Size(112, 20);
             this.label25.TabIndex = 68;
             this.label25.Text = "Quick Settings";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(405, 260);
+            this.label26.Location = new System.Drawing.Point(608, 400);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(59, 13);
+            this.label26.Size = new System.Drawing.Size(90, 20);
             this.label26.TabIndex = 67;
             this.label26.Text = "Game Four";
             // 
             // GameFourSizeY
             // 
-            this.GameFourSizeY.Location = new System.Drawing.Point(592, 344);
+            this.GameFourSizeY.Location = new System.Drawing.Point(888, 529);
+            this.GameFourSizeY.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameFourSizeY.Maximum = new decimal(new int[] {
             2160,
             0,
@@ -784,7 +847,7 @@
             0,
             0});
             this.GameFourSizeY.Name = "GameFourSizeY";
-            this.GameFourSizeY.Size = new System.Drawing.Size(120, 20);
+            this.GameFourSizeY.Size = new System.Drawing.Size(180, 26);
             this.GameFourSizeY.TabIndex = 66;
             this.GameFourSizeY.Value = new decimal(new int[] {
             540,
@@ -795,15 +858,17 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(568, 347);
+            this.label27.Location = new System.Drawing.Point(852, 534);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(17, 13);
+            this.label27.Size = new System.Drawing.Size(24, 20);
             this.label27.TabIndex = 65;
             this.label27.Text = "Y:";
             // 
             // GameFourSizeX
             // 
-            this.GameFourSizeX.Location = new System.Drawing.Point(442, 345);
+            this.GameFourSizeX.Location = new System.Drawing.Point(663, 531);
+            this.GameFourSizeX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameFourSizeX.Maximum = new decimal(new int[] {
             3840,
             0,
@@ -815,7 +880,7 @@
             0,
             0});
             this.GameFourSizeX.Name = "GameFourSizeX";
-            this.GameFourSizeX.Size = new System.Drawing.Size(120, 20);
+            this.GameFourSizeX.Size = new System.Drawing.Size(180, 26);
             this.GameFourSizeX.TabIndex = 64;
             this.GameFourSizeX.Value = new decimal(new int[] {
             960,
@@ -826,32 +891,35 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(419, 347);
+            this.label28.Location = new System.Drawing.Point(628, 534);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
             this.label28.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label28.Size = new System.Drawing.Size(17, 13);
+            this.label28.Size = new System.Drawing.Size(24, 20);
             this.label28.TabIndex = 63;
             this.label28.Text = "X:";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(419, 329);
+            this.label29.Location = new System.Drawing.Point(628, 506);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(27, 13);
+            this.label29.Size = new System.Drawing.Size(40, 20);
             this.label29.TabIndex = 62;
             this.label29.Text = "Size";
             // 
             // GameFourPosY
             // 
-            this.GameFourPosY.Location = new System.Drawing.Point(592, 305);
+            this.GameFourPosY.Location = new System.Drawing.Point(888, 469);
+            this.GameFourPosY.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameFourPosY.Maximum = new decimal(new int[] {
             2160,
             0,
             0,
             0});
             this.GameFourPosY.Name = "GameFourPosY";
-            this.GameFourPosY.Size = new System.Drawing.Size(120, 20);
+            this.GameFourPosY.Size = new System.Drawing.Size(180, 26);
             this.GameFourPosY.TabIndex = 61;
             this.GameFourPosY.Value = new decimal(new int[] {
             540,
@@ -862,22 +930,24 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(568, 308);
+            this.label30.Location = new System.Drawing.Point(852, 474);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(17, 13);
+            this.label30.Size = new System.Drawing.Size(24, 20);
             this.label30.TabIndex = 60;
             this.label30.Text = "Y:";
             // 
             // GameFourPosX
             // 
-            this.GameFourPosX.Location = new System.Drawing.Point(442, 306);
+            this.GameFourPosX.Location = new System.Drawing.Point(663, 471);
+            this.GameFourPosX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GameFourPosX.Maximum = new decimal(new int[] {
             3840,
             0,
             0,
             0});
             this.GameFourPosX.Name = "GameFourPosX";
-            this.GameFourPosX.Size = new System.Drawing.Size(120, 20);
+            this.GameFourPosX.Size = new System.Drawing.Size(180, 26);
             this.GameFourPosX.TabIndex = 59;
             this.GameFourPosX.Value = new decimal(new int[] {
             960,
@@ -888,19 +958,21 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(419, 308);
+            this.label31.Location = new System.Drawing.Point(628, 474);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
             this.label31.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label31.Size = new System.Drawing.Size(17, 13);
+            this.label31.Size = new System.Drawing.Size(24, 20);
             this.label31.TabIndex = 58;
             this.label31.Text = "X:";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(419, 285);
+            this.label32.Location = new System.Drawing.Point(628, 438);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(44, 13);
+            this.label32.Size = new System.Drawing.Size(65, 20);
             this.label32.TabIndex = 57;
             this.label32.Text = "Position";
             // 
@@ -908,27 +980,55 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(29, 487);
+            this.label33.Location = new System.Drawing.Point(44, 749);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(680, 24);
+            this.label33.Size = new System.Drawing.Size(1015, 32);
             this.label33.TabIndex = 74;
             this.label33.Text = "THE RESOLUTION SET MUST EXIST IN YOUR GRAPHICS CONTROL PANEL";
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(82, 521);
+            this.label34.Location = new System.Drawing.Point(123, 802);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(574, 13);
+            this.label34.Size = new System.Drawing.Size(858, 20);
             this.label34.TabIndex = 75;
             this.label34.Text = "Google \'Custom Resolution\' Followed by either AMD or NVIDIA. Resolutions that don" +
     "\'t exist will not be availiable in game.";
             // 
+            // twogames
+            // 
+            this.twogames.AccessibleDescription = "Launches the first two games and minimizes this window.";
+            this.twogames.Location = new System.Drawing.Point(1128, 40);
+            this.twogames.Name = "twogames";
+            this.twogames.Size = new System.Drawing.Size(194, 56);
+            this.twogames.TabIndex = 76;
+            this.twogames.Text = "Launch Two Games";
+            this.toolTip1.SetToolTip(this.twogames, "Launches the first two games and minimizes this window.");
+            this.twogames.UseVisualStyleBackColor = true;
+            this.twogames.Click += new System.EventHandler(this.twogames_Click);
+            // 
+            // FourGames
+            // 
+            this.FourGames.AccessibleDescription = "Launches all four games and minimizes this application.";
+            this.FourGames.Location = new System.Drawing.Point(1128, 126);
+            this.FourGames.Name = "FourGames";
+            this.FourGames.Size = new System.Drawing.Size(194, 56);
+            this.FourGames.TabIndex = 77;
+            this.FourGames.Text = "Launch Four Games";
+            this.toolTip1.SetToolTip(this.FourGames, "Launches all four games and minimizes this application.");
+            this.FourGames.UseVisualStyleBackColor = true;
+            this.FourGames.Click += new System.EventHandler(this.FourGames_Click);
+            // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 552);
+            this.ClientSize = new System.Drawing.Size(1362, 849);
+            this.Controls.Add(this.FourGames);
+            this.Controls.Add(this.twogames);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.GameFourLaunch);
@@ -999,6 +1099,7 @@
             this.Controls.Add(this.GameOnePosX);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainWindow";
             this.Text = "Simple ElDewrito SplitScreen";
             ((System.ComponentModel.ISupportInitialize)(this.GameOnePosX)).EndInit();
@@ -1093,6 +1194,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Button twogames;
+        private System.Windows.Forms.Button FourGames;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
